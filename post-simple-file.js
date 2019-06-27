@@ -1,10 +1,9 @@
 function save2() {
   var btns = document.getElementById('btn-save');
   var gh = document.getElementById('filename');
-  var value = gh.options[gh.selectedIndex].value + '?dl=1';
+  var value = gh.options[gh.selectedIndex].value;
   var btn = document.createElement('a');
   btn.href = value;
-  btn.target = '_blank';
   btns.appendChild(btn);
   btn.click();
   btns.removeChild(btn);
